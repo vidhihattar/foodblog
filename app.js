@@ -249,7 +249,11 @@ app.get("/:category", function(req, res){
 
 });
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
 
-app.listen("3000", function(){
+app.listen(port, function(){
   console.log("server is up");
 });
