@@ -1,0 +1,52 @@
+<%- include("partials/header")-%>
+
+
+<div class="submit-container">
+  <h1>submit</h1>
+
+  <form class="submit-form" action="/submit" method="post">
+    <input type="text" name="title" placeholder="Title">
+    <input type="text" name="content" placeholder="Recipe">
+    <div class="ingredient-container">
+      <div class="ingredients">
+        <input type="ingredient" name="ingredient" placeholder="Ingredient">
+
+      </div>
+
+      <button type="button" name="button" class="add-ing" onclick="addIngredient()">+</button>
+
+    </div>
+
+
+    <div class="bottom-input">
+      <select name="category">
+        <option selected>Option selcted</option>
+        <option value="Thai">Thai</option>
+        <option value="American">American</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Indian">Indian</option>
+      </select>
+      <input type="file" name="image" >
+
+    </div>
+
+    <button type="submit" name="button" class="submit-btn">Post</button>
+  </form>
+
+
+</div>
+
+<script type="text/javascript">
+  const ingredients = document.querySelector(".ingredients");
+
+  function addIngredient(){
+    const newInput = document.createElement("input");
+    newInput.placeholder = "Ingredient";
+    newInput.name = "ingredient";
+    ingredients.appendChild(newInput);
+  }
+
+</script>
+
+<%- include("partials/footer") -%>

@@ -1,0 +1,118 @@
+<%- include("partials/header") -%>
+
+<div class="top-section">
+  <div class="top-text">
+    <p>Hungry? </p>
+    <p>Find recipes to satiate your hunger pangs!</p>
+    <a href="/recipes">Explore</a>
+  </div>
+</div>
+<p class="cat-heading">Categories</p>
+<div class="categories">
+
+  <a href="/thai">
+    <div class="category-card">
+
+      <img src="/img/thai-food.jpg">
+      <div class="card-hover">
+        <p>Thai</p>
+        <p>Thai culture is known for snacking, which is why there are so many small side dishes. They love quick foods like spring rolls, rice dishes with a variety of different flavors of chicken and shrimp. There are so many dips, soups, salads, and sweet and spicy aromas in Thai cooking</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="/mexican">
+    <div class="category-card">
+
+      <img src="/img/mexican-food.jpg">
+      <div class="card-hover">
+        <p>Mexican</p>
+        <p>Mexican cuisine consists of the cooking cuisines and traditions of the modern country of Mexico.</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="/spanish">
+    <div class="category-card">
+
+      <img src="/img/spanish-food.jpg">
+      <div class="card-hover">
+        <p>Spanish</p>
+        <p>Charles Perry refers to Spanish cuisine as "an existential sort of cuisine with a tough, dogged, living-on-the-edge character".</p>
+      </div>
+    </div>
+
+  </a>
+
+
+  <a href="/indian">
+    <div class="category-card">
+
+      <img src="/img/indian-food.jpg">
+      <div class="card-hover">
+        <p>Indian</p>
+        <p>Indian cuisine consists of a variety of regional and traditional cuisines native to India. </p>
+      </div>
+    </div>
+
+  </a>
+
+  <a href="/chinese">
+    <div class="category-card">
+
+      <img src="/img/chinese-food.jpg">
+      <div class="card-hover">
+        <p>Chinese</p>
+        <p>Chinese cuisine has influenced many other cuisines in Asia and beyond, with modifications made to cater to local palates. Chinese food staples such as rice, soy sauce, noodles, tea, chili oil, and tofu, and utensils such as chopsticks and the wok, can now be found worldwide.</p>
+      </div>
+    </div>
+
+
+  </a>
+
+  <a href="/american">
+    <div class="category-card">
+      <img src="/img/american-food.jpg">
+      <div class="card-hover">
+        <p>American</p>
+        <p>The first thing that comes to mind when you think of “American cuisine” are classics like burgers, fried chicken, hot dogs and pancakes.</p>
+      </div>
+    </div>
+
+  </a>
+
+
+
+</div>
+<div class="banner">
+  Join us!
+  <a href="#">Signup</a>
+</div>
+<div class="submit-rec">
+  <img src="/img/10-2-food-png-picture.png" alt="">
+  <div class="submit-card">
+    <p>Do you have a recipe you want to share? share it with us!</p>
+    <a href="/submit">Share your recipe!</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  window.onload = navReset;
+  function navReset(){
+    alert("hey");
+    const loginBtn = document.querySelector(".login-btn");
+    const signupBtn = document.querySelector(".signup-btn");
+    console.log(loginBtn);
+    if (loginBtn.innerText ==="Logout") {
+      loginBtn.href = "/logout";
+      signupBtn.style.display = "none";
+    }
+    else if(loginBtn.innerText ==="Login"){
+      loginBtn.href = "/login";
+      signupBtn.style.display = "block";
+    }
+
+  }
+
+</script>
+<%- include("partials/footer") -%>

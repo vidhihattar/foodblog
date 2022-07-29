@@ -1,0 +1,429 @@
+*{
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body{
+  background-color: white ;
+
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background: #edd8c7;
+  align-items: center;
+  color: #3b332c;
+}
+
+header a{
+  padding:  21px 30px;
+  text-decoration: none;
+  color: inherit;
+}
+
+header a:hover{
+  background-color: #66584b;
+  color: white;
+  opacity: 30%;
+}
+
+footer{
+  background-color: #edd8c7;
+  text-align: center;
+  color: #3b332c;
+  padding: 20px;
+  width: 100vw;
+}
+
+a.logo:nth-child(1){
+  font-size: 20px;
+}
+
+.nav-options{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.recipe-container{
+  margin: 20px 100px 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.recipe-heading{
+  margin: 50px 150px 0;
+}
+
+.recipe-card, .search-recipe-card{
+  width: 300px;
+  height: 350px;
+  background-color: #eeeae7;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px 20px 20px;
+}
+
+.recipe-img{
+  height: 70%;
+  background-position: center;
+  background-image: url("/img/thai-food.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.top-section{
+  width: 100vw;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/heading.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.top-text a{
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #3b332c;
+  color:  #3b332c;
+
+}
+
+.top-text a:hover{
+  background-color: #edd8c7;
+  color: white;
+  border: 1px solid white;
+}
+
+.top-text{
+  text-align: center;
+  background-color: white;
+  padding: 80px;
+  border-radius: 10px;
+
+}
+
+.bg-img{
+  width: 50%;
+  background-image: url("/img/heading.jpg");
+  background-position:0 100px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+.top-text p:nth-child(1){
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 0 20px;
+  color: #66584b;
+}
+
+.top-text p:nth-child(2){
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #3b332c;
+}
+
+.cat-heading{
+  text-align: center;
+  font-size: 40px;
+  color: #3b332c;
+  font-weight: 700;
+  margin: 100px 10px 30px;
+}
+
+.categories{
+  margin: 20px 20px 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #3b332c;
+}
+
+.categories a{
+  color: inherit;
+}
+
+.category-card{
+  width: fit-content;
+  height: fit-content;
+  background-color: #eeeae7;
+  margin: 20px;
+  border-radius: 10px;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+
+.category-card img{
+  z-index: 0;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.card-hover{
+  z-index: 3;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background: #eeeae7;
+  width: 95%;
+  height: fit-content;
+  margin: 10px 10px 20px;
+  padding-bottom: 10px;
+
+  border-top-right-radius: 40px;
+}
+
+.card-hover p:nth-child(1){
+  font-size: 20px;
+  margin: 10px 10px 20px;
+  font-weight: 600;
+
+}
+
+.card-hover p:nth-child(2){
+  max-height: 0;
+  transition: max-height 1.5s ease-in-out;
+  padding: 0 10px 0;
+  overflow: hidden;
+}
+
+.category-card:hover .card-hover p:nth-child(2){
+  max-height: 500px;
+  padding: 0 10px 0;
+}
+
+.category-card:hover{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12), 0px 0px 80px rgba(0, 0, 0, 0.24);
+}
+
+.banner{
+  background-image: url("/img/banner.png");
+  width: 100vw;
+  background-size: cover;
+  height: 350px;
+  background-repeat: no-repeat;
+  background: -webkit-linear-gradient(rgba(250, 250, 250, 0.1), rgba(238, 234, 231, 0.9)), url("/img/banner.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight:bold;
+  color: #6b5340;
+  flex-direction: column;
+  padding-top: 50px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12), 0px 0px 80px rgba(0, 0, 0, 0.24);
+  margin: 100px 0;
+}
+
+.banner a{
+  text-decoration: none;
+  color: #6b5340;
+  font-weight: normal;
+  font-size: 30px;
+  border: 1px solid #6b5340;
+  padding: 10px 20px;
+  margin: 20px;
+
+}
+
+.banner a:hover{
+  background-color: #edd8c7;
+  color: white;
+  border: 1px solid white;
+}
+
+.submit-rec{
+  display: flex;
+  flex-direction: row;
+  margin: 200px 70px;
+  justify-content: space-between;
+  color: #6b5340;
+}
+
+.submit-rec img{
+  height: 200px;
+  z-index:11;
+  height: 300px;
+}
+
+
+.submit-card{
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  height: 200px;
+  text-align: center;
+  z-index: 10;
+  right: 170px;
+  position: absolute;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12), 0px 0px 80px rgba(0, 0, 0, 0.24);
+}
+
+.submit-card p{
+  margin:60px 0 30px ;
+  font-size: 20px;
+}
+
+.submit-card a{
+  padding: 10px 20px;
+  border: 1px solid #6b5340;
+  color: #6b5340;
+  text-decoration: none;
+
+}
+
+.submit-card a:hover{
+  background-color: #edd8c7;
+  color: white;
+  border: 1px solid white;
+}
+
+.submit-container{
+  height: fit-content;
+  width: 50%;
+  background-color: white;
+  margin:100px auto 170px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.submit-form{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.submit-form input, .login-form input, .signup-form input{
+  font-size: 14px;
+  margin: 10px 5px;
+  height: 30px;
+  border: 0.5px solid #dcbea6;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.submit-form input::placeholder{
+  color: grey;
+}
+
+.ingredient-container{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.ingredient-container input{
+  width: 650px;
+}
+
+.ingredient-container button{
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px 15px 0;
+  border-radius: 50%;
+  border: 1px solid #dcbea6;
+  background-color: white;
+  color: #dcbea6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.ingredients{
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-input select{
+  width: 460px;
+  height: 40px;
+  border: 0.5px solid #dcbea6;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 10px 5px;
+}
+
+.bottom-input input{
+  width: 200px;
+  border: none;
+  margin-left: 20px;
+}
+
+
+
+.login-container, .signup-container{
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+.signup-container {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.login-form, .signup-form{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.signup-form{
+  height: 400px;
+}
+
+.login-container h1, .signup-container h1, .submit-container h1{
+  margin-left: 5px;
+}
+
+.login-form input, .signup-form input{
+  width: 300px;
+}
+
+.login-form button, .signup-form button, .submit-btn{
+  background-color: #dcbea6;
+  border: none;
+  height: 40px;
+  width: 310px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.submit-btn{
+  width: 705px;
+  margin: 10px 5px;
+}
+
+
+
+
+
+
+
+
+/* end */

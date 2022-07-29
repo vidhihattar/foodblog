@@ -1,0 +1,26 @@
+<footer>
+  Made by Vidhi Hattar
+</footer>
+
+<script type="text/javascript">
+  window.onload = navReset;
+  function navReset(){
+    const loginBtn = document.querySelector(".login-btn");
+    const signupBtn = document.querySelector(".signup-btn");
+    console.log(loginBtn);
+    if (loginBtn.innerText ==="Logout") {
+      loginBtn.href = "/logout";
+      signupBtn.style.display = "none";
+    }
+    else if(loginBtn.innerText ==="Login"){
+      loginBtn.href = "/login";
+      signupBtn.style.display = "block";
+    }
+
+  }
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<%- include("partials/header") -%>
+<h1> <%= category %> </h1>
+
+<div class="recipe-container">
+
+
+    <% recipes.forEach(function(recipe){ %>
+  <div class="recipe-card">
+      <div class="recipe-img"></div>
+      <h3><%= recipe.title %> </h3>
+      <p><%= recipe.content.substr(0,100) %>...</p>
+  </div>
+    <% }) %>
+
+
+
+
+</div>
+
+
+<%- include("partials/footer") -%>
